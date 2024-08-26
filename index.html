@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+
+    <!-- daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+    <!-- tailwind play cdn -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'manrope': ["Manrope", 'sans-serif']
+                    },
+
+                },
+            },
+        }
+    </script>
+
+
+
+</head>
+
+<body class="font-manrope">
+
+    <!-- header section -->
+    <header class="bg-gradient-to-b from-gray-100 to-gray-50 ">
+
+        <!-- nav sec -->
+        <nav class="container mx-auto py-4">
+            <div class="navbar  relative ">
+
+                <!-- nav-start sec -->
+                <div class=" lg:w-full w-full flex-1">
+                    <a href="">
+                        <div class=" bg-lime-400 -rotate-45 rounded-full w-8 h-8  mr-2 flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right text-black w-8 h-8 ml-2 mt-4"></i>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="font-extrabold text-3xl">Rinterio</div>
+                    </a>
+                </div>
+
+                <!-- nav-middle sec -->
+                <div class=" hidden flex lg:flex absolute left-64 ">
+                    <ul class="flex gap-5 ">
+                        <li><a href="" class="text-base text-neutral-800 font-bold  ">Home</a></li>
+                        <li><a href="" class="text-base text-gray-500 transition duration-300 ease-in-out hover:text-neutral-800 hover:font-bold">Service</a></li>
+                        <li><a href="" class="text-base text-gray-500 transition duration-300 ease-in-out hover:text-neutral-800 hover:font-bold">Portfulio</a></li>
+                        <li><a href="" class="text-base text-gray-500 transition duration-300 ease-in-out hover:text-neutral-800 hover:font-bold">Blogs</a></li>
+                        <li><a href="" class="text-base text-gray-500 transition duration-300 ease-in-out hover:text-neutral-800 hover:font-bold">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- nav-end sec -->
+                <div class=" hidden lg:flex">
+                    <div class="bg-white shadow rounded-full"> <button class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button></div>
+                    <div class="bg-white shadow rounded-full ml-5 mr-5"> <button class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="  rounded-full bg-lime-400 flex p-2 items-center  ">
+                        <a href="">
+                            <div class="font-extrabold text-xs mr-2 ">Book Consult</div>
+                        </a>
+                        <a href="">
+                            <div class=" bg-black rounded-full w-8 h-8 -rotate-45 mr-2 flex justify-center items-center ">
+                                <i class="fa-solid fa-arrow-right text-white w-8 h-8 ml-2 mt-4 "></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- dropdown sec -->
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white shadow rounded-full">
+                        <i class="fa-solid fa-bars "></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfulio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                        <li><a>Search</a></li>
+                        <li><a>Cart</a></li>
+                        <li><a>Book Consult</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav sec end -->
+
+        <!-- hero sec -->
+         <div class="container flex  flex-col justify-center items-center">
+            <!-- image -->
+             <div class="w-full flex justify-center items-center mb-4 ">
+                <img class="w-5/6 lg:w-auto" src="assets/banner.png" alt="">
+             </div>
+
+             <!-- text and button-->
+             <div class="text-center px-4 lg:px-20 ">
+                <h1 class="text-2xl lg:text-6xl font-extrabold mb-6">A barn house of this design has a striking appearance</h1>
+                <p class="mb-8 text-sm lg:text-base text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-200 rounded-full text-xl mb-24 w-full h-full lg:w-auto  ">View Details
+                    <div class=" bg-lime-400 -rotate-45 rounded-full w-8 h-8   flex justify-center items-center mt-4 mb-4">
+                        <i class="fa-solid fa-arrow-right text-black w-8 h-8   mt-3"></i>
+                    </div> </button>
+
+             </div>
+         </div>
+
+         <!-- hero sec end -->
+
+    </header>
+
+
+
+    <main>
+        
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
