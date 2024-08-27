@@ -65,7 +65,7 @@
                 </div>
 
                 <!-- nav-middle sec -->
-                <div class=" hidden flex lg:flex absolute left-64 ">
+                <div class=" hidden lg:block flex lg:flex absolute left-64 ">
                     <ul class="flex gap-5 ">
                         <li><a href="" class="text-base text-neutral-800 font-bold  ">Home</a></li>
                         <li><a href=""
@@ -101,9 +101,9 @@
                         </button>
 
                     </div>
-                    <div class="  rounded-full bg-lime-400 flex p-2 items-center  ">
+                    <div class="  rounded-full bg-lime-400 flex items-center  ">
                         <a href="">
-                            <div class="font-extrabold text-xs mr-2 ">Book Consult</div>
+                            <div class="font-extrabold text-xs  p-4 ">Book Consult</div>
                         </a>
                         <a href="">
                             <div
@@ -427,7 +427,7 @@
                     </button>
                 </div>
                 <h2 class="text-center font-bold text-2xl lg:text-4xl mb-4 ">Read Our Articles and News</h2>
-                <p class="text-center text-sm lg:text-base text-gray-500 font-medium mb-8">The barn house captivates
+                <p class="text-center text-base text-gray-500 font-medium mb-8">The barn house captivates
                     with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal
                     accents.</p>
             </div>
@@ -538,23 +538,105 @@
 
 
         <!-- fourth sec -->
-         <section>
-            <div>
-                <div class="flex justify-center">
-                    <button class="btn rounded-full bg-[#ABEF5F33] mb-4 font-bold text-base px-6 mt-4 lg:mt-10">
-                        <i class="fa-solid fa-arrow-right text-black"></i>
-                        Let’s Connect
-                    </button>
+         <section class=" bg-[url(assets/bg.jpg)] bg-no-repeat bg-center bg-cover">
+           <div class="container mx-auto">
+
+            <div class="content mx-4">
+
+                <!-- text section -->
+                <div>
+                    <div class="flex justify-center">
+                        <button class="btn rounded-full bg-[#ABEF5F33] mb-4 font-bold text-base px-6 mt-4 lg:mt-10">
+                            <i class="fa-solid fa-arrow-right text-black"></i>
+                            Let’s Connect
+                        </button>
+                    </div>
+                    <h2 class="text-center font-bold text-2xl lg:text-4xl mb-4 ">Let’s Discuss Next Project</h2>
+                    <p class="text-center text-base text-gray-500 font-medium mb-8 w-auto">The barn house captivates
+                        with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal
+                        accents.</p>
                 </div>
-                <h2 class="text-center font-bold text-2xl lg:text-4xl mb-4 ">Let’s Discuss Next Project</h2>
-                <p class="text-center text-sm lg:text-base text-gray-500 font-medium mb-8">The barn house captivates
-                    with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal
-                    accents.</p>
+                
+                    <!-- input sec -->
+                    <div class="form grid lg:grid-cols-2 gap-6 ">
+                        <input type="text" placeholder="First Name*" required class="p-5 rounded-full">
+                        <input type="text" placeholder="Last Name*" required class="p-5 rounded-full">
+                        <input type="tel" placeholder="Phone*" required class="p-5 rounded-full">
+                        <input type="email" placeholder="Email" required class="p-5 rounded-full">
+                        <input type="text" placeholder="Write your message here" required class="p-5 rounded-2xl pb-60 lg:col-span-2">
+    
+                    </div>
+
+                    <!-- button sec -->
+               
+               <div class="flex justify-center mt-6 mx-4 ">
+                <button
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#ABEF5F] rounded-full text-xl mb-24 w-full h-full  lg:w-full border-2 border-lime-400 font-extrabold  ">Send Mail
+                <div class=" bg-black -rotate-45 rounded-full w-8 h-8   flex justify-center items-center my-2 ">
+                    <i class="fa-solid fa-arrow-right text-white w-8 h-8   mt-3"></i>
+                </div>
+            </button>
+               </div>
+            </div>
+            
             </div>
          </section>
+
+         <!-- All sec end -->
     </main>
 
-    <footer></footer>
+    <footer class="bg-[#1C1C1C]">
+        <div class="container mx-auto">
+            <div class="content mx-4 flex flex-col justify-center items-center">
+                <div class=" lg:w-full w-full flex justify-center items-center mt-20 ">
+                    <a href="">
+                        <div
+                            class=" bg-lime-400 -rotate-45 rounded-full w-8 h-8  mr-2 flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right text-black w-8 h-8 ml-2 mt-4"></i>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="font-extrabold text-3xl text-white ">
+                            Rinterio</div>
+                    </a>
+                </div>
+                <p class="text-[#737373] text-base text-center my-4 w-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div class=" flex bg-[#1C1C1C] ">
+                    <ul class="lg:flex lg:gap-20 grid gap-4 text-center ">
+                        <li><a href="" class="text-base text-[#E9E9E9] ">Home</a></li>
+                        <li><a href=""
+                                class="text-base text-[#E9E9E9]">Service</a>
+                        </li>
+                        <li><a href=""
+                                class="text-base text-[#E9E9E9] ">Portfulio</a>
+                        </li>
+                        <li><a href=""
+                                class="text-base text-[#E9E9E9]  ">Blogs</a>
+                        </li>
+                        <li><a href=""
+                                class="text-base text-[#E9E9E9]  ">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <button class="my-8">
+                    <div class="  rounded-full bg-lime-400 flex items-center  ">
+                        <a href="">
+                            <div class="font-extrabold text-xs  p-4 ">Book Consult</div>
+                        </a>
+                        <a href="">
+                            <div
+                                class=" bg-black rounded-full w-8 h-8 -rotate-45 mr-2 flex justify-center items-center ">
+                                <i class="fa-solid fa-arrow-right text-white w-8 h-8  mt-4 "></i>
+                            </div>
+                        </a>
+    
+                    </div>
+                </button>
+
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 
